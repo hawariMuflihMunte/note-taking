@@ -17,6 +17,13 @@ export default class DOM {
       throw new TypeError('Required `element` value is HTMLElement instance');
     }
 
-    document.querySelector(target).appendChild(element);
+    if (target instanceof String) {
+      document.querySelector(target).appendChild(element);
+      return;
+    }
+
+    if (target instanceof HTMLElement) {
+      target.appendChild(element);
+    }
   }
 }
