@@ -1,3 +1,5 @@
+import DOM from '../classes/dom';
+
 export default function Header() {
   const template = `
     <header id="app__header">
@@ -5,9 +7,9 @@ export default function Header() {
     </header>
   `.trim();
 
-  const parser = new DOMParser();
-  const elem = parser.parseFromString(template, 'text/html');
-  const node = elem.body.firstChild;
+  const node = DOM.parser({
+    template
+  });
 
   return node;
 }
