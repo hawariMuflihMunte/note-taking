@@ -10,10 +10,13 @@ export default class DOM {
   }
 
   static append({
-    element
+    element,
+    target
   }) {
     if (!(element instanceof HTMLElement)) {
       throw new TypeError('Required `element` value is HTMLElement instance');
     }
+
+    document.querySelector(target).appendChild(element);
   }
 }
