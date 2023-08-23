@@ -1,6 +1,6 @@
 import DOM from '../../classes/dom';
 
-export default function appData() {
+export default function AppData() {
   const template = `
     <article id="app__data">
       <form id="app__data-form">
