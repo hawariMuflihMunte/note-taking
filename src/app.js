@@ -1,7 +1,14 @@
 import Header from './components/header';
+import Nav from './components/nav';
 
 export default function App() {
   const doc_ = window.document;
 
-  console.log(Header());
+  const [
+    header,
+    nav
+  ] = [
+    Header(),
+    Nav()
+  ];
 }
