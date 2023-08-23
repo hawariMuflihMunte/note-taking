@@ -8,4 +8,12 @@ export default class DOM {
 
     return node;
   }
+
+  static append({
+    element
+  }) {
+    if (!(element instanceof HTMLElement)) {
+      throw new TypeError('Required `element` value is HTMLElement instance');
+    }
+  }
 }
