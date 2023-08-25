@@ -1,0 +1,16 @@
+#app__data {
+  max-width: 420px;
+  margin: 25px 0;
+}
+
+#app__data-form {
+  max-width: 100%;
+}
+
+#app__data-form * {
+  width: 100%;
+}
+
+#app__data-form textarea {
+  resize: vertical;
+}
