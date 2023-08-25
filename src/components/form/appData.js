@@ -4,12 +4,19 @@ export default function AppData() {
   const template = `
     <article id="app__data">
       <form id="app__data-form">
-        <input type="text" name="title" placeholder="Title" />
-        <textarea name="content" placeholder="Today is ...">
+        <input
+          type="text"
+          name="title"
+          placeholder="Title"
+        />
+        <textarea
+          name="content"
+          placeholder="Today is ..."
+        ></textarea>
         <button type="reset">Reset</button>
         <button type="submit">Add</button>
       </form>
-    </article></textarea></form></article>
+    </article>
   `.trim();
 
   const node = DOM.parser({
